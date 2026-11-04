@@ -16,12 +16,13 @@ android {
         jvmTarget = '1.8'
     }
 
-    defaultConfig {
+defaultConfig {
         applicationId "com.example.dictee_app"
         minSdkVersion 24
         targetSdkVersion flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 1
+        versionName "1.0"
+    }
     }
 
     buildTypes {
