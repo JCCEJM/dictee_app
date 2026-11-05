@@ -31,7 +31,7 @@ class _DicteeHomePageState extends State<DicteeHomePage> {
   File? _image;
   String _extractedText = "Aucune photo analysée pour le moment.";
   final ImagePicker _picker = ImagePicker();
-  final TextRecognizer _textRecognizer = TextRecognizer(textRecognitionScript: TextRecognitionScript.latin);
+  final TextRecognizer _textRecognizer = TextRecognizer(script: TextRecognitionScript.latin);
 
   Future<void> _pickImageAndRecognize() async {
     final XFile? photo = await _picker.pickImage(source: ImageSource.camera);
